@@ -1,4 +1,4 @@
-#Live over[here](https://yenytm.github.io/yenytm-vanillajs-hello/)
+#Live over [here](https://yenytm.github.io/yenytm-vanillajs-hello/)
 
 # Hello World with Vanilla JS
 
