@@ -7,26 +7,26 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  let who = ["The dog", "My sister", "Her unicorn"];
-  let action = ["ate", "flew", "stole"];
-  let what = ["my homework", "my phone", "my keys"];
-  let when = ["before class", "this morning", "during lunch"];
+  let subject = ["The dog", "My sister", "Her unicorn"];
+  let verb = ["ate", "flew", "stole"];
+  let object = ["my homework", "my phone", "my keys"];
+  let time = ["before class", "this morning", "during lunch"];
 
-  function randomElement(array) {
-    return array[Math.floor(Math.random() * array.length)];
+  function randExcuse(str) {
+    return str[Math.floor(Math.random() * str.length)];
   }
-  let excuse =
-    randomElement(who) +
+  let excuseGen =
+    randExcuse(subject) +
     " " +
-    randomElement(action) +
+    randExcuse(verb) +
     " " +
-    randomElement(what) +
+    randExcuse(object) +
     " " +
-    randomElement(when);
+    randExcuse(time);
 
   console.log("Hello Rigo from the console!");
-  console.log(excuse);
+  console.log(excuseGen);
 
-  const elementExcuse = document.getElementsByTagName("p");
-  elementExcuse[0].innerText = excuse;
+  const exGenerator = document.getElementsByTagName("p");
+  exGenerator[0].innerText = excuseGen;
 };
